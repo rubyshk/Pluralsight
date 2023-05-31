@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: navy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Start of form section */
+.form-section{
+    width: 40%;
+    height: 100vh;
+    background-color: rgb(15, 14, 14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-section img{
+    width: 300px;
+    margin-top: 110px;
+}
+.form{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin-top: 60px;
+}
+.form label{
+    color: white;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-right: 190px;
+}
+.form input{
+    width: 330px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    border: 1px solid gray;
+}
+.form button{
+    width: 330px;
+    height: 40px;
+    margin-top: 25px;
+    background-color: rgb(66, 133, 244);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 2px;
+}
+.form a{
+    margin-top: 50px;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(100, 149, 237);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form hr{
+    width: 330px;
+    border: 0.01px solid gray;
+    margin-top: 20px;
+}
+p{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin: 80px;
+}
+/* End of form section */
+/* Start of image section */
+.img-section{
+    width: 60%;
+    height: 100vh;
+    background-color: rgb(45, 40, 40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.img-section img{
+    width: 620px;
+}
+.img-section button{
+    width: 130px;
+    height: 50px;
+    background-color: rgb(173, 8, 82);
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+}
+/* End of image section */
+
+@media (max-width:768px){
+    .container{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .form-section{
+        width: 100%;
+        height: auto;
+        margin-right: 40px;
+    }
+    .img-section{
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+        margin-right: 50px;
+
+    }
+    .img-section img{
+        width: 400px;
+        margin-top: 550px;
+    }
+}
+
